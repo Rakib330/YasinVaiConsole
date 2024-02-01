@@ -7,7 +7,7 @@
         //LeapCheck();
         //UniqueCheck();
         //FibonacchiR(100);
-        //FactorialSum(24);
+        //FactorialSum(25);
     }
     public static void Matrix4x4()
     {
