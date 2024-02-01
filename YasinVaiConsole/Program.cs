@@ -1,13 +1,13 @@
-﻿class abc
+﻿class YasinVaiConsole
 {
     public static void Main(string[] args)
     {
-        //Matrix4x4();
+        Matrix4x4();
         //Palindrome();
         //LeapCheck();
         //UniqueCheck();
         //FibonacchiR(100);
-        //UniqueCheck();
+        //FactorialSum(24);
     }
     public static void Matrix4x4()
     {
@@ -151,11 +151,11 @@
             }
         }
     }
-    public static void FibonacchiR(int n, int a = 0,int b=1)
+    public static void FibonacchiR(int n, long a = 0, long b =1)
     {
         if (n > 0)
         {
-            Console.WriteLine(a);
+            Console.WriteLine(n +" => "+a);
             FibonacchiR(n - 1, b, a + b);
         }
     }
@@ -171,4 +171,28 @@
     //        b = fib;
     //    }
     //}
+
+    public static void FactorialSum(int n)
+    {
+        long sum = 0;
+        for (int i = 1; i <= n; i++)
+        {
+            sum += Factorial(i);
+        }
+        Console.WriteLine("Sum of factorials up to " + n + ": " + sum);
+    }
+    public static long Factorial(int n)
+    {
+        if (n == 0 || n == 1)
+        {
+            return 1;
+        }
+
+        int result = 1;
+        for (int i = 2; i <= n; i++)
+        {
+            result *= i;
+        }
+        return result;
+    }
 }
