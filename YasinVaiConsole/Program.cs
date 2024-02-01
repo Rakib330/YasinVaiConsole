@@ -6,7 +6,8 @@
         //Palindrome();
         //LeapCheck();
         //UniqueCheck();
-        UniqueCheck();
+        //FibonacchiR(100);
+        //UniqueCheck();
     }
     public static void Matrix4x4()
     {
@@ -150,4 +151,24 @@
             }
         }
     }
+    public static void FibonacchiR(int n, int a = 0,int b=1)
+    {
+        if (n > 0)
+        {
+            Console.WriteLine(a);
+            FibonacchiR(n - 1, b, a + b);
+        }
+    }
+
+    //public static void FibonacchiR() {
+    //    int a = 0;
+    //    int b = 1;
+    //    int fib = 0;
+    //    for (var i = 0;i < 100;i++) {
+    //        fib = a + b;
+    //        Console.WriteLine(i+1 +" -> " + fib);
+    //        a = b;
+    //        b = fib;
+    //    }
+    //}
 }
